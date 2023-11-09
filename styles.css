@@ -87,6 +87,10 @@ header {
   color: #000;
 }
 
+.nav-list a.home {
+  color: #06aa52;
+}
+
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -242,12 +246,56 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-.hero .hero-img img {
+.hero .hero-img .profile-img {
   width: 282.562px;
   height: 387.43px;
   flex-shrink: 0;
+}
+
+.hero .hero-img .ellipse-1 {
+  position: absolute;
+  width: 16.37px;
+  height: 16.37px;
+  top: 0;
+  right: 50%;
+}
+.hero .hero-img .ellipse-2 {
+  position: absolute;
+  width: 16.37px;
+  height: 16.37px;
+  right: 0;
+  top: 25%;
+}
+.hero .hero-img .ellipse-3 {
+  position: absolute;
+  width: 16.37px;
+  height: 16.37px;
+  right: 0;
+  top: 75%;
+}
+.hero .hero-img .ellipse-4 {
+  position: absolute;
+  width: 16.37px;
+  height: 16.37px;
+  right: 50%;
+  bottom: 0;
+}
+.hero .hero-img .ellipse-5 {
+  position: absolute;
+  width: 16.37px;
+  height: 16.37px;
+  left: 0;
+  top: 25%;
+}
+.hero .hero-img .ellipse-6 {
+  position: absolute;
+  width: 16.37px;
+  height: 16.37px;
+  left: 0;
+  top: 75%;
 }
 
 @media screen and (max-width: 768px) {
@@ -407,8 +455,6 @@ header {
   font-weight: 400;
 }
 
-/* @media screen and (max-) */
-
 /* PROJECTS SECTION */
 .projects {
   margin-bottom: 154.27px;
@@ -430,11 +476,12 @@ header {
 
 .projects .content {
   display: flex;
-  gap: 38px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .projects .content .project {
-  width: 385px;
+  width: 370px;
   height: 274.73px;
   border-radius: 14.94px;
   background: #cae9fb;
@@ -442,6 +489,8 @@ header {
   justify-content: space-between;
   position: relative;
   padding: 0 16px 16px 16px;
+  overflow: hidden;
+  margin-inline: auto;
 }
 
 .projects .content .project .resort {
@@ -520,16 +569,17 @@ header {
   margin-top: 44px;
 }
 
-.projects .content .project .real-estate-2 {
+.projects .content .project .real-estate-2,
+.projects .content .project .real-estate {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.projects .content .project .real-estate {
-  position: absolute;
-  right: 0;
-  top: 0;
+@media screen and (max-width: 768px) {
+  .projects {
+    margin-bottom: 80.27px;
+  }
 }
 
 /* FOOTER */

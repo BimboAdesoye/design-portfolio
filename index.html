@@ -14,7 +14,7 @@
         <div class="navbar">
           <p class="logo"><span>J</span>oseph</p>
           <ul class="nav-list active" id="nav-list">
-            <li><a href="#hero">Home</a></li>
+            <li><a href="#hero" class="home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#works">Works</a></li>
@@ -49,7 +49,13 @@
           </div>
         </div>
         <div class="hero-img">
-          <img src="assets/Vector-portfolio.svg" alt="" />
+          <img src="assets/Vector-portfolio.svg" alt="" class="profile-img" />
+          <img src="assets/Ellipse 1.svg" alt="" class="ellipse-1" />
+          <img src="assets/Ellipse 2.svg" alt="" class="ellipse-2" />
+          <img src="assets/Ellipse 3.svg" alt="" class="ellipse-5" />
+          <img src="assets/Ellipse 4.svg" alt="" class="ellipse-3" />
+          <img src="assets/Ellipse 4.svg" alt="" class="ellipse-6" />
+          <img src="assets/Ellipse 5.svg" alt="" class="ellipse-4" />
         </div>
       </section>
 
@@ -149,7 +155,11 @@
               </p>
               <button>view more</button>
             </div>
-            <img class="real-estate-2" src="assets/fortune reality real estate landing page2.svg" alt="">
+            <img
+              class="real-estate-2"
+              src="assets/fortune reality real estate landing page2.svg"
+              alt=""
+            />
             <img
               class="real-estate"
               src="assets/fortune reality real estate landing page.svg"
@@ -171,37 +181,44 @@
             complete the enquiry form.
           </p>
           <div class="footer-flex">
-              <div class="contact-me">
-                <span>
-                  <div class="img"><img src="assets/path.svg" alt="" /></div>
-                  <p>07042458319</p>
-                </span>
-                <span>
-                  <div class="img"><img src="assets/Exclude.svg" alt="" /></div>
-                  <a href="mailto:Jgifted13@gmail.com" class="text-underline"
-                    >Jgifted13@gmail.com</a
-                  >
-                </span>
-              </div>
-              <div class="follow-me">
-                <p>Follow me on social media</p>
-                <span class="socials">
-                  <a href=""><img src="assets/facebooksvg.svg" alt="" /></a>
-                  <a href=""><img src="assets/linkedin.svg" alt="" /></a>
-                  <a href=""><img src="assets/twitter.svg" alt="" /></a>
-                </span>
-              </div>
+            <div class="contact-me">
+              <span>
+                <div class="img"><img src="assets/path.svg" alt="" /></div>
+                <p>07042458319</p>
+              </span>
+              <span>
+                <div class="img"><img src="assets/Exclude.svg" alt="" /></div>
+                <a href="mailto:Jgifted13@gmail.com" class="text-underline"
+                  >Jgifted13@gmail.com</a
+                >
+              </span>
+            </div>
+            <div class="follow-me">
+              <p>Follow me on social media</p>
+              <span class="socials">
+                <a href=""><img src="assets/facebooksvg.svg" alt="" /></a>
+                <a href=""><img src="assets/linkedin.svg" alt="" /></a>
+                <a href=""><img src="assets/twitter.svg" alt="" /></a>
+              </span>
+            </div>
           </div>
         </div>
         <div class="form-margin">
           <h1>Send me a message</h1>
-          <form action="">
-            <input type="text" name="text" id="text" placeholder="Name" />
+          <form action="" method="POST">
+            <input
+              type="text"
+              name="text"
+              id="text"
+              placeholder="Name"
+              required
+            />
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Email Address"
+              required
             />
             <textarea
               name="textarea"
@@ -209,8 +226,9 @@
               cols="30"
               rows="10"
               placeholder="Your message"
+              required
             ></textarea>
-            <button>Send Message</button>
+            <button type="submit">Send Message</button>
           </form>
         </div>
       </div>
