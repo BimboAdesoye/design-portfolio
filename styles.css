@@ -120,6 +120,7 @@ header {
     flex-direction: column;
     transition: transform 0.3s ease-in;
     align-items: center;
+    z-index: 1;
   }
 
   .nav-list li a {
@@ -320,7 +321,8 @@ header {
   .hero .hero-img {
     width: 100%;
     width: 300px;
-    /* height: 350px; */
+    margin-top: 1rem;
+    padding-bottom: 2rem;
     height: fit-content;
     margin-inline: auto;
   }
