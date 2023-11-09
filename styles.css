@@ -32,7 +32,6 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Merriweather", serif;
-  /* background-color: red; */
 }
 
 .container {
@@ -296,7 +295,7 @@ header {
 
 /* ABOUT SECTION */
 .about {
-  margin-top: 120px;
+  margin-top: 90px;
 }
 
 .about .heading {
@@ -358,7 +357,7 @@ header {
 
 .services .content {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 68px;
 }
 
@@ -487,7 +486,7 @@ header {
 }
 
 .projects .content .project:nth-child(1) h2 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 900;
   line-height: 20px;
   letter-spacing: -0.045em;
@@ -516,10 +515,16 @@ header {
 }
 
 .projects .content .project:nth-child(3) h2 {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 900;
   line-height: 27px;
   margin-top: 44px;
+}
+
+.projects .content .project .real-estate-2 {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .projects .content .project .real-estate {
@@ -530,8 +535,7 @@ header {
 
 /* FOOTER */
 footer {
-  /* height: 565px; */
-  height: 762px;
+  height: fit-content;
   background-color: #67776e;
 }
 
@@ -539,7 +543,8 @@ footer {
   display: flex;
   justify-content: space-between;
   padding-top: 89px;
-  /* padding-bottom: 48.58px; */
+  gap: 1rem;
+  padding-bottom: 48.58px;
   color: white;
 }
 
@@ -548,17 +553,17 @@ footer {
 }
 
 .footer div:nth-child(1) h2 {
-  font-size: 33px;
+  /* font-size: 33px; */
+  font-size: clamp(25px, 4vw, 33px);
   font-weight: 700;
   line-height: 48px;
   margin-bottom: 11px;
 }
 
 .footer div:nth-child(1) .about-me {
-  font-size: 24px;
+  font-size: clamp(16px, 3vw, 24px);
   font-weight: 400;
   line-height: 34px;
-  /* margin-bottom: 50px; */
   margin-bottom: 92px;
 }
 
@@ -622,7 +627,8 @@ footer {
 }
 
 .footer div:nth-child(2) h1 {
-  font-size: 33px;
+  /* font-size: 33px; */
+  font-size: clamp(25px, 3vw, 33px);
   font-weight: 700;
   line-height: 48px;
   margin-bottom: 24.83px;
@@ -641,7 +647,8 @@ footer {
   border-radius: 13.86px;
   border: none;
   outline: none;
-  font-size: 21px;
+  /* font-size: 21px; */
+  font-size: clamp(16px, 3vw, 21px);
   font-weight: 400;
   line-height: 30px;
   padding: 1rem;
@@ -670,4 +677,45 @@ footer {
 
 .text-underline {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+
+  .footer div:nth-child(1) {
+    max-width: 100%;
+  }
+
+  .footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer div:nth-child(1) .follow-me {
+    margin-top: 0;
+  }
+
+  .form-margin {
+    margin-top: 50px;
+  }
+
+  .footer div:nth-child(2) form {
+    width: 100%;
+  }
+
+  .footer div:nth-child(1) .about-me {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .footer-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
 }
