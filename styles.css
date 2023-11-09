@@ -356,8 +356,8 @@ header {
 
 .services .content {
   display: flex;
-  /* flex-wrap: wrap; */
-  gap: 68px;
+  flex-wrap: wrap;
+  gap: 35px;
 }
 
 .services .content .service {
@@ -386,13 +386,13 @@ header {
   color: white;
 }
 
-.services .content .service:hover img {
-  fill: #ffffff;
-}
-
 .services .content .service img {
   width: 33px;
   height: 42px;
+}
+
+.services .content .service:hover img {
+  fill: #ffffff;
 }
 
 .services .content .service h2 {
